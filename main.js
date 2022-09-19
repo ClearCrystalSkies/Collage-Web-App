@@ -21,7 +21,7 @@ function speak(){
     set_timeout(function(){
         img_id = "selfie3";
         speak_data = "Capturing the third photo in 5 seconds."
-        var utterThis = SpeechSynthesisUtterance(speak_data);
+        var utterThis = new SpeechSynthesisUtterance(speak_data);
         synth.speak(utterThis);
         take_snapshot();
         save();
